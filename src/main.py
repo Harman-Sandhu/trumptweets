@@ -42,7 +42,6 @@ app.add_middleware(
 
 @app.get("/tweet",response_class=FileResponse,tags=["Fake Trump Tweet"])
 async def tweet(text: Optional[str]=None):
-	#print(text)
 	try:
 		img = Image.open("./blank.png")
 	except Exception:
@@ -62,16 +61,8 @@ async def tweet(text: Optional[str]=None):
 			f.close()
 
 	font = ImageFont.truetype("font.ttf", 18)
-	#print(font)
 	lines = textwrap.wrap(text, width=60)
-	#print(len(lines))
-	#y_text = 90
 	if len(lines) > 1:
-		# for line in lines:
-		#     width, height = font.getsize(line)
-		#     draw.text(((15 + width) / 2, y_text), line, font=font, fill="#000")
-		#     y_text += height
-		#print("not supported")
 		draw.text((15, 90),"Maximum of 60 characters are allowed.",fill="#000",font=font)
 	else:
 		draw.text((15, 85),text,fill="#000",font=font)
