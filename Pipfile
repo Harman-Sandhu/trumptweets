@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+uvicorn = "*"
+fastapi = "*"
+certifi = "*"
+chardet = "*"
+click = "*"
+Flask-RESTful = "*"
+idna = "*"
+itsdangerous = "*"
+Jinja2 = "*"
+MarkupSafe = "*"
+pytz = "*"
+requests = "*"
+six = "*"
+urllib3 = "*"
+Werkzeug = "*"
+Pillow = "*"
+starlette = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

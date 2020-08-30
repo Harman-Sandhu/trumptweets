@@ -1,0 +1,4 @@
+requests==2.24.0
+starlette==0.13.6
+fastapi==0.61.1
+Pillow==7.2.0
