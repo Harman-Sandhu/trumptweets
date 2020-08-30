@@ -1,4 +1,9 @@
+certifi==2020.6.20
+chardet==3.0.4
+fastapi==0.61.1
+idna==2.10
+Pillow==7.2.0
+pydantic==1.6.1
 requests==2.24.0
 starlette==0.13.6
-fastapi==0.61.1
-Pillow==7.2.0
+urllib3==1.25.10
