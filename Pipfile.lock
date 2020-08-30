@@ -13,6 +13,11 @@ urllib3 = "*"
 Pillow = "*"
 starlette = "*"
 pydantic = "*"
+click = "*"
+h11 = "*"
+uvicorn = "*"
+websockets = "*"
+
 
 [dev-packages]
 
