@@ -4,23 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-uvicorn = "*"
 fastapi = "*"
 certifi = "*"
 chardet = "*"
-click = "*"
-Flask-RESTful = "*"
 idna = "*"
-itsdangerous = "*"
-Jinja2 = "*"
-MarkupSafe = "*"
-pytz = "*"
 requests = "*"
-six = "*"
 urllib3 = "*"
-Werkzeug = "*"
 Pillow = "*"
 starlette = "*"
+pydantic = "*"
 
 [dev-packages]
 
