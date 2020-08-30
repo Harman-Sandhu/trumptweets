@@ -10,3 +10,6 @@ Documentation for this simple api can be found here: https://faketrumptweets.her
 
 ## Example 
 ![Fake Tweet](https://faketrumptweets.herokuapp.com/tweet?text=This%20is%20a%20fake%20tweet.%20@RealHarmZ)
+
+
+#twitter #faketweets #faketrumptweets #customtweets
