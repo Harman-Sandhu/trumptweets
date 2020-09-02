@@ -63,9 +63,9 @@ async def tweet(text: Optional[str]=None):
 	font = ImageFont.truetype("font.ttf", 18)
 	lines = textwrap.wrap(text, width=60)
 	if len(lines) > 1:
-		draw.text((15, 90),"Maximum of 60 characters are allowed.",fill="#000",font=font)
+		draw.text((15, 90),"Maximum of 60 characters are allowed.",fill="#604af0",font=font)
 	else:
-		draw.text((15, 85),text,fill="#000",font=font)
+		draw.text((15, 85),text,fill="#14171a",font=font)
 	img.save("hi.png")
 	file_like = open("./hi.png", mode="rb")
 	return StreamingResponse(file_like, media_type="image/png")
