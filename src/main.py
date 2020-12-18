@@ -23,7 +23,7 @@ tags_metadata = [
 app = FastAPI(
 	title="Fake Trump Tweets API",
     description="I needed an api of fake trump tweets for a meme but couldn't find it, so i made it.",
-    version="1.0.3",
+    version="1.0.4",
     docs_url=None, 
     redoc_url="/",
     openapi_tags=tags_metadata)
@@ -63,7 +63,7 @@ async def tweet(text: Optional[str]=None):
 	font = ImageFont.truetype("font.ttf", 18)
 	lines = textwrap.wrap(text, width=60)
 	if len(lines) > 1:
-		draw.text((15, 90),"Maximum of 60 characters are allowed.",fill="#604af0",font=font)
+		draw.text((15, 62),"Maximum of 60 characters are allowed.",fill="#604af0",font=font)
 	else:
 		draw.text((15, 85),text,fill="#14171a",font=font)
 	img.save("hi.png")
