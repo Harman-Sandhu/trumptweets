@@ -23,7 +23,7 @@ tags_metadata = [
 app = FastAPI(
 	title="Fake Trump Tweets API",
     description="I needed an api of fake trump tweets for a meme but couldn't find it, so i made it.",
-    version="1.0.2",
+    version="1.0.3",
     docs_url=None, 
     redoc_url="/",
     openapi_tags=tags_metadata)
@@ -43,13 +43,13 @@ app.add_middleware(
 @app.get("/tweet",response_class=FileResponse,tags=["Fake Trump Tweet"])
 async def tweet(text: Optional[str]=None):
 	try:
-		img = Image.open("./blank-2.png")
+		img = Image.open("./blank.png")
 	except Exception:
 		blank = requests.get("https://firebasestorage.googleapis.com/v0/b/faketrumptweets-8c438.appspot.com/o/blank-2.png?alt=media&token=79366004-9c55-4c2b-b0aa-a970bf4c2b06")
 		with open("blank.png","wb") as f:
 			f.write(blank.content)
 			f.close()
-	img = Image.open("./blank-2.png")
+	img = Image.open("./blank.png")
 	draw = ImageDraw.Draw(img)
 	try:
 		with open("font.ttf","rb") as font:
