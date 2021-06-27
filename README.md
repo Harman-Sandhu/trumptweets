@@ -9,6 +9,6 @@ Send a GET request to ```https://faketrumptweets.herokuapp.com/tweet?text=```+yo
 Documentation for this simple api can be found here: https://faketrumptweets.herokuapp.com/
 
 ## Example 
-![Fake Tweet](https://faketrumptweets.herokuapp.com/tweet?text=This%20is%20a%20fake%20tweet.%20@RealHarmZ)
+![Fake Tweet](https://faketrumptweets.herokuapp.com/tweet?text=This%20is%20a%20fake%20tweet.%20)
 
 
